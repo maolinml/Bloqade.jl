@@ -1,4 +1,4 @@
-channels = ["anaconda", "conda-forge"]
+channels = ["conda-forge"]
 
 
 [deps]

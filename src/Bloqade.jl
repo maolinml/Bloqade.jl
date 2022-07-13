@@ -52,7 +52,7 @@ const braket = PythonCall.pynew()
 # CondaPkg.add("amazon-braket-sdk")
 
 # [conda]
-# packages = ["python>=3.7.2", "amazon-braket.sdk"]
+# packages = ["python>=3.7.2", "amazon-braket-sdk"]
 # channels = ["conda-forge"]
 
 

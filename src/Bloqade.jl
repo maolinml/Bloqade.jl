@@ -47,6 +47,7 @@ const braket = PythonCall.pynew()
 
 function __init__()
     # copied from PyPlotCall.jl
+    println("wtf")
     PythonCall.pycopy!(plt, pyimport("matplotlib.pyplot"))
     PythonCall.pycopy!(braket, pyimport("amazon-braket-sdk"))
     return

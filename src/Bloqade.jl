@@ -48,6 +48,7 @@ const braket = PythonCall.pynew()
 println("wtf_outside")
 using Pkg
 Pkg.add("CondaPkg")
+using CondaPkg
 CondaPkg.add("amazon-braket-sdk")
 
 function __init__()

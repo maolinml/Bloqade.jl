@@ -47,7 +47,7 @@ const plt = PythonCall.pynew()
 function __init__()
     # copied from PyPlotCall.jl
     PythonCall.pycopy!(plt, pyimport("matplotlib.pyplot"))
-    PythonCall.pycopy!(plt, pyimport("braket"))
+    PythonCall.pycopy!(plt, pyimport("amazon-braket-sdk"))
     return
 end
 

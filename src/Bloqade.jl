@@ -45,6 +45,11 @@ using PythonCall
 const plt = PythonCall.pynew()
 const braket = PythonCall.pynew()
 
+println("wtf_outside")
+using Pkg
+Pkg.add("CondaPkg")
+CondaPkg.add("amazon-braket-sdk")
+
 function __init__()
     # copied from PyPlotCall.jl
     println("wtf")

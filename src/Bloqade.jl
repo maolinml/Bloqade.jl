@@ -45,20 +45,9 @@ using PythonCall
 const plt = PythonCall.pynew()
 const braket = PythonCall.pynew()
 
-# println("wtf_outside")
-# using Pkg
-# Pkg.add("CondaPkg")
-# using CondaPkg
-# CondaPkg.add("amazon-braket-sdk")
-
-# [conda]
-# packages = ["python>=3.7.2", "amazon-braket-sdk"]
-# channels = ["conda-forge"]
-
 
 function __init__()
     # copied from PyPlotCall.jl
-    println("wtf")
     PythonCall.pycopy!(plt, pyimport("matplotlib.pyplot"))
     # PythonCall.pycopy!(braket, pyimport("amazon-braket-sdk"))
     PythonCall.pycopy!(braket, pyimport("braket"))

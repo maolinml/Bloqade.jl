@@ -43,11 +43,12 @@ export rydberg_density, rydberg_corr, bitstring_hist, bitstring_hist!
 
 using PythonCall
 const plt = PythonCall.pynew()
+const braket = PythonCall.pynew()
 
 function __init__()
     # copied from PyPlotCall.jl
     PythonCall.pycopy!(plt, pyimport("matplotlib.pyplot"))
-    PythonCall.pycopy!(plt, pyimport("amazon-braket-sdk"))
+    PythonCall.pycopy!(braket, pyimport("amazon-braket-sdk"))
     return
 end
 

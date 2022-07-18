@@ -4,4 +4,9 @@ channels = ["conda-forge"]
 [deps]
 matplotlib = "3.5.1"
 python = ">=3.7.2,<4"
-amazon-braket-sdk = "1.21.1"
+# amazon-braket-sdk = "1.21.1"
+
+[pip.deps]
+amazon-braket-sdk = "@ git+https://github.com/maolinml/amazon-braket-sdk-python.git"
+
+

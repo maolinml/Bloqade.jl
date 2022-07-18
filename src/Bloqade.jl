@@ -45,6 +45,8 @@ using PythonCall
 const plt = PythonCall.pynew()
 const braket = PythonCall.pynew()
 
+using CondaPkg
+CondaPkg.status()
 
 function __init__()
     # copied from PyPlotCall.jl
